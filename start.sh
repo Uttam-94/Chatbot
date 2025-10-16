@@ -76,3 +76,4 @@ trap cleanup SIGINT SIGTERM
 npm start
 
 # This will run until npm start is terminated
+

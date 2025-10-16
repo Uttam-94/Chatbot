@@ -64,3 +64,4 @@ pause >nul
 
 echo 🛑 Shutting down...
 taskkill /f /im python.exe >nul 2>&1
+

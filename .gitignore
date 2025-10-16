@@ -1,0 +1,6 @@
+﻿ChatBot/frontend/node_modules/
+ChatBot/frontend/build/
+ChatBot/Backend/__pycache__/
+*.env
+.vscode/
+*.log

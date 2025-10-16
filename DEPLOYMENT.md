@@ -71,3 +71,4 @@ allow_origins=[
 - Backend: Free tier available (with some limitations)
 - Frontend: Free tier available
 - OpenRouter: Pay per use (very affordable)
+
