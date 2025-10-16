@@ -1,0 +1,17 @@
+﻿services:
+  - type: web
+    name: chatbot-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r Backend/requirements.txt
+    startCommand: cd Backend && uvicorn app:app --host 0.0.0.0 --port 
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false
+  - type: static
+    name: chatbot-frontend
+    buildCommand: cd frontend && npm install && npm run build
+    publishPath: frontend/build
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://chatbot-backend.onrender.com
